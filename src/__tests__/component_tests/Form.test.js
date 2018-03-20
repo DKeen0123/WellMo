@@ -4,8 +4,13 @@ import Form from '../../components/Form';
 
 describe('Form', () => {
   let form = shallow(<Form />);
+
   it('renders correctly', () => {
     expect(form).toMatchSnapshot();
+  });
+
+  it('renders a scale component', () => {
+    expect(form.find('Scale').exists()).toBe(true);
   });
 
   describe('when Scale input is updated', () => {

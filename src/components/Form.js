@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Scale from './Scale';
 
 class Form extends Component {
   constructor() {
@@ -12,6 +13,7 @@ class Form extends Component {
     return (
       <div>
         <h1>Form component </h1>
+        <Scale />
       </div>
     );
   }
