@@ -13,7 +13,7 @@ class Form extends Component {
     return (
       <div>
         <h1>Form component </h1>
-        <Scale updateState={this.updateState} />u
+        <Scale updateState={this.updateState}/>
       </div>
     );
   }
