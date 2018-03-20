@@ -23,7 +23,7 @@ describe('Form', () => {
   describe('when Scale input is updated', () => {
     it('should update the state to the value of the input', () => {
       const event = { target: { name: 'scaleInput', value: 99 } };
-      const finState = form.instance().updateState(event);
+      form.instance().updateState(event);
       expect(form.state('firstScaleScore')).toEqual(99);
     });
   });
