@@ -13,11 +13,20 @@ describe('Form', () => {
     expect(form.find('Scale').exists()).toBe(true);
   });
 
+  it('passes updateState as props to scale Component', () => {
+    expect(
+      form
+        .find('Scale')
+        .props()
+        .updateState.exists()
+    ).toBe(true);
+  });
+
   describe('when Scale input is updated', () => {
     it('should update the state to the value of the input', () => {
       const event = { target: { name: 'scaleInput', value: 99 } };
       const finState = form.instance().updateState(event);
-      expect(form.state('hotThought')).toEqual(99);
+      expect(form.state('firstScaleScore')).toEqual(99);
     });
   });
 });

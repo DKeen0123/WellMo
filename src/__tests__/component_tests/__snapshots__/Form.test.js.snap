@@ -21,7 +21,10 @@ ShallowWrapper {
         <h1>
           Form component 
 </h1>,
-        <Scale />,
+        <Scale
+          updateState={[Function]}
+/>,
+        "u",
       ],
     },
     "ref": null,
@@ -41,11 +44,14 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
-        "props": Object {},
+        "props": Object {
+          "updateState": [Function],
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
       },
+      "u",
     ],
     "type": "div",
   },
@@ -59,7 +65,10 @@ ShallowWrapper {
           <h1>
             Form component 
 </h1>,
-          <Scale />,
+          <Scale
+            updateState={[Function]}
+/>,
+          "u",
         ],
       },
       "ref": null,
@@ -79,11 +88,14 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "class",
-          "props": Object {},
+          "props": Object {
+            "updateState": [Function],
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
         },
+        "u",
       ],
       "type": "div",
     },
