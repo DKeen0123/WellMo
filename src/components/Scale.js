@@ -1,20 +1,19 @@
 import React, { Component } from 'react';
 
 class Scale extends Component {
-
-  stateUpdate = () => console.log(1);
+  constructor(props) {
+    super(props);
+  }
 
   render() {
     return (
       <div>
         <h1>Scale component</h1>
-      <input
-        id='firstScale'
-        onChange={this.stateUpdate}
-        type='number'
-        name ='moodScale'
-        min='0'
-        max='100'
+        <input
+          id="firstScale"
+          type="integer"
+          name="scaleInput"
+          onChange={this.props.updateState}
         />
       </div>
     );
