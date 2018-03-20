@@ -17,9 +17,7 @@ describe('Form', () => {
     expect(
       form
         .find('Scale')
-        .props()
-        .updateState.exists()
-    ).toBe(true);
+        .prop('updateState')).toBe(form.instance().updateState)
   });
 
   describe('when Scale input is updated', () => {

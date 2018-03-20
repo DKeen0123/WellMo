@@ -23,17 +23,9 @@ ShallowWrapper {
 </h1>,
         <input
           id="firstScale"
-<<<<<<< HEAD
-          max="100"
-          min="0"
-          name="moodScale"
-          onChange={[Function]}
-          type="number"
-=======
           name="scaleInput"
           onChange={undefined}
           type="integer"
->>>>>>> 56fb018de3b7225f29830c1878c414b6b7572e4a
 />,
       ],
     },
@@ -56,17 +48,9 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "id": "firstScale",
-<<<<<<< HEAD
-          "max": "100",
-          "min": "0",
-          "name": "moodScale",
-          "onChange": [Function],
-          "type": "number",
-=======
           "name": "scaleInput",
           "onChange": undefined,
           "type": "integer",
->>>>>>> 56fb018de3b7225f29830c1878c414b6b7572e4a
         },
         "ref": null,
         "rendered": null,
@@ -87,17 +71,9 @@ ShallowWrapper {
 </h1>,
           <input
             id="firstScale"
-<<<<<<< HEAD
-            max="100"
-            min="0"
-            name="moodScale"
-            onChange={[Function]}
-            type="number"
-=======
             name="scaleInput"
             onChange={undefined}
             type="integer"
->>>>>>> 56fb018de3b7225f29830c1878c414b6b7572e4a
 />,
         ],
       },
@@ -120,17 +96,9 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "id": "firstScale",
-<<<<<<< HEAD
-            "max": "100",
-            "min": "0",
-            "name": "moodScale",
-            "onChange": [Function],
-            "type": "number",
-=======
             "name": "scaleInput",
             "onChange": undefined,
             "type": "integer",
->>>>>>> 56fb018de3b7225f29830c1878c414b6b7572e4a
           },
           "ref": null,
           "rendered": null,

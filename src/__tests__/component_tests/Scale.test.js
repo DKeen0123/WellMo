@@ -11,7 +11,6 @@ describe('Scale', () => {
 
   describe('when a user types in a number', () => {
     it('fires the `updateState()` function', () => {
-      // const updateStateSpy = jest.spyOn(Scale.prototype, 'updateState');
       const updateStateSpy = jest.fn();
       const event = { target: { name: 'scaleInput', value: 99 } };
       scale = shallow(<Scale updateState={updateStateSpy} />);
