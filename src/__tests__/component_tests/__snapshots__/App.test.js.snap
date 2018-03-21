@@ -21,7 +21,7 @@ ShallowWrapper {
         <h1>
           WellMo
 </h1>,
-        <Scale />,
+        <Form />,
       ],
     },
     "ref": null,
@@ -59,7 +59,7 @@ ShallowWrapper {
           <h1>
             WellMo
 </h1>,
-          <Scale />,
+          <Form />,
         ],
       },
       "ref": null,

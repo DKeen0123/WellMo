@@ -1,11 +1,11 @@
 import React from 'react';
-import Scale from './Scale';
+import Form from './Form';
 
 const App = () => {
   return (
     <div>
       <h1>WellMo</h1>
-      <Scale />
+      <Form />
     </div>
   );
 };

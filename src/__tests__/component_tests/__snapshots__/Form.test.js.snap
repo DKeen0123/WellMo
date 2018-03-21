@@ -17,6 +17,7 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
+<<<<<<< HEAD
       "children": <h1>
          Hot Thought Form
 </h1>,
@@ -33,6 +34,78 @@ ShallowWrapper {
       "rendered": " Hot Thought Form",
       "type": "h1",
     },
+=======
+      "children": Array [
+        <h1>
+          Form component 
+</h1>,
+        <Scale
+          updateState={[Function]}
+/>,
+        <button
+          id="displayButton"
+          onClick={undefined}
+>
+          Enter Mood
+</button>,
+        <p
+          id="outputBox"
+>
+          99
+</p>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Form component ",
+        },
+        "ref": null,
+        "rendered": "Form component ",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "updateState": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Enter Mood",
+          "id": "displayButton",
+          "onClick": undefined,
+        },
+        "ref": null,
+        "rendered": "Enter Mood",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "99",
+          "id": "outputBox",
+        },
+        "ref": null,
+        "rendered": "99",
+        "type": "p",
+      },
+    ],
+>>>>>>> cf4df61b39aa8ffc4e65a803cfc4ecdb841799d0
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -41,6 +114,7 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
+<<<<<<< HEAD
         "children": <h1>
            Hot Thought Form
 </h1>,
@@ -57,6 +131,78 @@ ShallowWrapper {
         "rendered": " Hot Thought Form",
         "type": "h1",
       },
+=======
+        "children": Array [
+          <h1>
+            Form component 
+</h1>,
+          <Scale
+            updateState={[Function]}
+/>,
+          <button
+            id="displayButton"
+            onClick={undefined}
+>
+            Enter Mood
+</button>,
+          <p
+            id="outputBox"
+>
+            99
+</p>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Form component ",
+          },
+          "ref": null,
+          "rendered": "Form component ",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "updateState": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Enter Mood",
+            "id": "displayButton",
+            "onClick": undefined,
+          },
+          "ref": null,
+          "rendered": "Enter Mood",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "99",
+            "id": "outputBox",
+          },
+          "ref": null,
+          "rendered": "99",
+          "type": "p",
+        },
+      ],
+>>>>>>> cf4df61b39aa8ffc4e65a803cfc4ecdb841799d0
       "type": "div",
     },
   ],
