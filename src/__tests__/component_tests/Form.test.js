@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import Form from '../../components/Form';
 
 describe('Form', () => {
@@ -27,16 +27,17 @@ describe('Form', () => {
       expect(form.state('firstScaleScore')).toEqual(99);
     });
 
+    
     it('displays output when button is clicked', () => {
-      console.log(form)
-      console.log(document)
-      console.log(form.setState({ firstScaleScore: 99 }))
-      // document.getElementById('#displayButton');
-      console.log(document.getElementById('#outputBox'))
+      form.setState({ firstScaleScore: 99 });
+      const wrapper = mount(
+        <Form />, { attachTo: document.body }
+      );
+      form.find('#displayButton').prop('onClick')();
       expect(
-        document
-          .getElementById('#outputBox').textContent)
-          .toEqual(99);
+        form
+          .find('#outputBox').text())
+          .toEqual('99');
     });
   });
 });

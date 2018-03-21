@@ -8,7 +8,10 @@ class Form extends Component {
   }
 
   updateState = event => this.setState({ firstScaleScore: event.target.value });
-  // displayScore = () => 
+  displayScore = () => {
+    const outputBox = document.getElementById('outputBox')
+    outputBox.innerHTML = this.state.firstScaleScore;
+  };
 
   render() {
     return (
@@ -16,7 +19,7 @@ class Form extends Component {
         <h1>Form component </h1>
         <Scale updateState={this.updateState}/>
         <button id="displayButton" onClick={this.displayScore}>Enter Mood</button>
-        <p id="outputBox">99</p>
+        <p id="outputBox"/>
       </div>
     );
   }
