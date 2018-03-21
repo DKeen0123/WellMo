@@ -26,5 +26,17 @@ describe('Form', () => {
       form.instance().updateState(event);
       expect(form.state('firstScaleScore')).toEqual(99);
     });
+
+    it('displays output when button is clicked', () => {
+      console.log(form)
+      console.log(document)
+      console.log(form.setState({ firstScaleScore: 99 }))
+      // document.getElementById('#displayButton');
+      console.log(document.getElementById('#outputBox'))
+      expect(
+        document
+          .getElementById('#outputBox').textContent)
+          .toEqual(99);
+    });
   });
 });
