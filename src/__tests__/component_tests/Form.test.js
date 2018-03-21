@@ -27,15 +27,15 @@ describe('Form', () => {
       expect(form.state('firstScaleScore')).toEqual(99);
     });
 
-    
+
     it('displays output when button is clicked', () => {
-      form.setState({ firstScaleScore: 99 });
-      const wrapper = mount(
+      const fullFormRender = mount(
         <Form />, { attachTo: document.body }
       );
-      form.find('#displayButton').prop('onClick')();
+      fullFormRender.setState({ firstScaleScore: 99 });
+      fullFormRender.find('#displayButton').prop('onClick')();
       expect(
-        form
+        fullFormRender
           .find('#outputBox').text())
           .toEqual('99');
     });
