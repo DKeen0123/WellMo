@@ -28,7 +28,9 @@ ShallowWrapper {
 >
           Enter Mood
 </button>,
-        <Output />,
+        <Output
+          score={undefined}
+/>,
       ],
     },
     "ref": null,
@@ -70,7 +72,9 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
-        "props": Object {},
+        "props": Object {
+          "score": undefined,
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -95,7 +99,9 @@ ShallowWrapper {
 >
             Enter Mood
 </button>,
-          <Output />,
+          <Output
+            score={undefined}
+/>,
         ],
       },
       "ref": null,
@@ -137,7 +143,9 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
-          "props": Object {},
+          "props": Object {
+            "score": undefined,
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],

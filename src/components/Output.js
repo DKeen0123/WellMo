@@ -3,7 +3,7 @@ import React from 'react';
 const Output = props => {
   return (
     <div>
-      <p id="score">{props.savedFirstScaleScore}</p>
+      <p id="score">{props.score}</p>
     </div>
   );
 };

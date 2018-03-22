@@ -6,7 +6,10 @@ import Output from './Output';
 class Form extends Component {
   constructor() {
     super();
-    this.state = { firstScaleScore: undefined };
+    this.state = {
+      firstScaleScore: undefined,
+      savedFirstScaleScore: undefined
+    };
   }
 
   updateState = event => this.setState({ firstScaleScore: event.target.value });
@@ -23,7 +26,7 @@ class Form extends Component {
         <button id="displayButton" onClick={this.displayScore}>
           Enter Mood
         </button>
-        <Output />
+        <Output score={this.state.savedFirstScaleScore} />
       </div>
     );
   }

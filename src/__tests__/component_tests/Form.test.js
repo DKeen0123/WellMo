@@ -27,6 +27,13 @@ describe('Form', () => {
     );
   });
 
+  it('passes savedFirstScaleScore as props to Output Component', () => {
+    form.setState({ savedFirstScaleScore: '99' });
+    expect(form.find('Output').prop('score')).toEqual(
+      form.state('savedFirstScaleScore')
+    );
+  });
+
   describe('when Scale input is updated', () => {
     it('should update the state to the value of the input', () => {
       const event = { target: { name: 'scaleInput', value: 99 } };
