@@ -22,7 +22,6 @@ class Form extends Component {
         <button id="displayButton" onClick={this.displayScore}>
           Enter Mood
         </button>
-        <p id="outputBox" />
       </div>
     );
   }

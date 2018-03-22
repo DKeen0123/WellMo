@@ -28,9 +28,6 @@ ShallowWrapper {
 >
           Enter Mood
 </button>,
-        <p
-          id="outputBox"
-/>,
       ],
     },
     "ref": null,
@@ -68,17 +65,6 @@ ShallowWrapper {
         "rendered": "Enter Mood",
         "type": "button",
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "id": "outputBox",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "p",
-      },
     ],
     "type": "div",
   },
@@ -99,9 +85,6 @@ ShallowWrapper {
 >
             Enter Mood
 </button>,
-          <p
-            id="outputBox"
-/>,
         ],
       },
       "ref": null,
@@ -138,17 +121,6 @@ ShallowWrapper {
           "ref": null,
           "rendered": "Enter Mood",
           "type": "button",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "id": "outputBox",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "p",
         },
       ],
       "type": "div",
