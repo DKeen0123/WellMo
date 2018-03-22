@@ -10,11 +10,11 @@ describe('Submit', () => {
   });
 
   describe('when a user clicks the button', () => {
-    it('fires the `displayScore()` function', () => {
-      const mockDisplayScore = jest.fn();
-      submit = shallow(<Submit displayScore={mockDisplayScore} />);
+    it('fires the `handleDisplayClick()` function', () => {
+      const mockhandleDisplayClick = jest.fn();
+      submit = shallow(<Submit handleDisplayClick={mockhandleDisplayClick} />);
       submit.find('#displayButton').prop('onClick')();
-      expect(mockDisplayScore).toBeCalled();
+      expect(mockhandleDisplayClick).toBeCalled();
     });
   });
 });
