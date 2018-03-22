@@ -21,10 +21,10 @@ ShallowWrapper {
         <Header />,
         <Question />,
         <Scale
-          updateState={[Function]}
+          handleTextBoxInput={[Function]}
 />,
         <Submit
-          displayScore={[Function]}
+          handleDisplayClick={[Function]}
 />,
         <Output
           score={undefined}
@@ -56,7 +56,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "updateState": [Function],
+          "handleTextBoxInput": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -67,7 +67,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "displayScore": [Function],
+          "handleDisplayClick": [Function],
         },
         "ref": null,
         "rendered": null,
@@ -97,10 +97,10 @@ ShallowWrapper {
           <Header />,
           <Question />,
           <Scale
-            updateState={[Function]}
+            handleTextBoxInput={[Function]}
 />,
           <Submit
-            displayScore={[Function]}
+            handleDisplayClick={[Function]}
 />,
           <Output
             score={undefined}
@@ -132,7 +132,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "updateState": [Function],
+            "handleTextBoxInput": [Function],
           },
           "ref": null,
           "rendered": null,
@@ -143,7 +143,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "displayScore": [Function],
+            "handleDisplayClick": [Function],
           },
           "ref": null,
           "rendered": null,

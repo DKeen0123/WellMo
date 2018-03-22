@@ -14,8 +14,8 @@ class Form extends Component {
     };
   }
 
-  updateState = event => this.setState({ firstScaleScore: event.target.value });
-  displayScore = () => {
+  handleTextBoxInput = event => this.setState({ firstScaleScore: event.target.value });
+  handleDisplayClick = () => {
     let { firstScaleScore } = this.state;
     this.setState({ savedFirstScaleScore: firstScaleScore });
   };
@@ -25,9 +25,9 @@ class Form extends Component {
       <div>
         <Header />
         <Question />
-        <Scale updateState={this.updateState}/>
-        <Submit displayScore={this.displayScore}/>
-        <Output score={this.state.savedFirstScaleScore} />
+        <Scale handleTextBoxInput={this.handleTextBoxInput}/>
+        <Submit handleDisplayClick={this.handleDisplayClick}/>
+        <Output score={this.state.savedFirstScaleScore}/>
       </div>
     );
   }

@@ -64,15 +64,15 @@ describe('button not clicked', () => {
 
 
   describe('Prop passing', () => {
-    it('passes updateState as props to scale Component', () => {
-      expect(form.find('Scale').prop('updateState')).toBe(
-        form.instance().updateState
+    it('passes handleTextBoxInput as props to scale Component', () => {
+      expect(form.find('Scale').prop('handleTextBoxInput')).toBe(
+        form.instance().handleTextBoxInput
       );
     });
 
-    it('passes displayScore as props to submit Component', () => {
-      expect(form.find('Submit').prop('displayScore')).toBe(
-        form.instance().displayScore
+    it('passes handleDisplayClick as props to submit Component', () => {
+      expect(form.find('Submit').prop('handleDisplayClick')).toBe(
+        form.instance().handleDisplayClick
       );
     });
 
@@ -87,12 +87,12 @@ describe('button not clicked', () => {
   describe('when Scale input is updated', () => {
     it('should update the state to the value of the input', () => {
       const event = { target: { name: 'scaleInput', value: 99 } };
-      form.instance().updateState(event);
+      form.instance().handleTextBoxInput(event);
       expect(form.state('firstScaleScore')).toEqual(99);
     });
 
     it('displays output when button is clicked', () => {
-      form.instance().displayScore();
+      form.instance().handleDisplayClick();
       expect(form.state('savedFirstScaleScore')).toEqual(99);
     });
   });

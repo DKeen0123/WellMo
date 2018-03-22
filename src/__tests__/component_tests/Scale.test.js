@@ -10,11 +10,11 @@ describe('Scale', () => {
   });
 
   describe('when a user types in a number', () => {
-    it('fires the `updateState()` function', () => {
-      const mockUpdateState = jest.fn();
-      scale = shallow(<Scale updateState={mockUpdateState} />);
+    it('fires the `handleTextBoxInput()` function', () => {
+      const mockhandleTextBoxInput = jest.fn();
+      scale = shallow(<Scale handleTextBoxInput={mockhandleTextBoxInput} />);
       scale.find('#firstScale').simulate('change');
-      expect(mockUpdateState).toBeCalled();
+      expect(mockhandleTextBoxInput).toBeCalled();
     });
   });
 });
