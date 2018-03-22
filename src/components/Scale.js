@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-function Scale(props) {
+const Scale = props => {
     return (
       <div>
         <input
