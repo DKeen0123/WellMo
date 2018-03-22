@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Form renders correctly 1`] = `
+exports[`Form Rendering components renders correctly 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
@@ -18,20 +18,14 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-<<<<<<< HEAD
-        <Question />,
-=======
         <Header />,
->>>>>>> scale_tdd
+        <Question />,
         <Scale
           updateState={[Function]}
 />,
-        <button
-          id="displayButton"
-          onClick={[Function]}
->
-          Enter Mood
-</button>,
+        <Submit
+          displayScore={[Function]}
+/>,
         <Output
           score={undefined}
 />,
@@ -39,6 +33,15 @@ ShallowWrapper {
     },
     "ref": null,
     "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
       Object {
         "instance": null,
         "key": undefined,
@@ -62,15 +65,13 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "function",
         "props": Object {
-          "children": "Enter Mood",
-          "id": "displayButton",
-          "onClick": [Function],
+          "displayScore": [Function],
         },
         "ref": null,
-        "rendered": "Enter Mood",
-        "type": "button",
+        "rendered": null,
+        "type": [Function],
       },
       Object {
         "instance": null,
@@ -93,20 +94,14 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-<<<<<<< HEAD
-          <Question />,
-=======
           <Header />,
->>>>>>> scale_tdd
+          <Question />,
           <Scale
             updateState={[Function]}
 />,
-          <button
-            id="displayButton"
-            onClick={[Function]}
->
-            Enter Mood
-</button>,
+          <Submit
+            displayScore={[Function]}
+/>,
           <Output
             score={undefined}
 />,
@@ -114,6 +109,15 @@ ShallowWrapper {
       },
       "ref": null,
       "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
         Object {
           "instance": null,
           "key": undefined,
@@ -137,15 +141,13 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "function",
           "props": Object {
-            "children": "Enter Mood",
-            "id": "displayButton",
-            "onClick": [Function],
+            "displayScore": [Function],
           },
           "ref": null,
-          "rendered": "Enter Mood",
-          "type": "button",
+          "rendered": null,
+          "type": [Function],
         },
         Object {
           "instance": null,
