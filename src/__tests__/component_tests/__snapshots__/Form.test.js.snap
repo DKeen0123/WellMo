@@ -18,9 +18,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h1>
-          Form component 
-</h1>,
+        <Question />,
         <Scale
           updateState={[Function]}
 />,
@@ -40,18 +38,16 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Form component ",
-        },
+        "nodeType": "function",
+        "props": Object {},
         "ref": null,
-        "rendered": "Form component ",
-        "type": "h1",
+        "rendered": null,
+        "type": [Function],
       },
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "class",
+        "nodeType": "function",
         "props": Object {
           "updateState": [Function],
         },
@@ -93,9 +89,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h1>
-            Form component 
-</h1>,
+          <Question />,
           <Scale
             updateState={[Function]}
 />,
@@ -115,18 +109,16 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Form component ",
-          },
+          "nodeType": "function",
+          "props": Object {},
           "ref": null,
-          "rendered": "Form component ",
-          "type": "h1",
+          "rendered": null,
+          "type": [Function],
         },
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "class",
+          "nodeType": "function",
           "props": Object {
             "updateState": [Function],
           },

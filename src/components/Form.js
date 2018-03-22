@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Scale from './Scale';
+import Question from './Question';
 
 class Form extends Component {
   constructor() {
@@ -16,7 +17,7 @@ class Form extends Component {
   render() {
     return (
       <div>
-        <h1>Form component </h1>
+        <Question />
         <Scale updateState={this.updateState}/>
         <button id="displayButton" onClick={this.displayScore}>Enter Mood</button>
         <p id="outputBox"/>
