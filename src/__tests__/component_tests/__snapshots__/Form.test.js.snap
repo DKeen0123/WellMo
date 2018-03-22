@@ -24,7 +24,7 @@ ShallowWrapper {
 />,
         <button
           id="displayButton"
-          onClick={undefined}
+          onClick={[Function]}
 >
           Enter Mood
 </button>,
@@ -62,7 +62,7 @@ ShallowWrapper {
         "props": Object {
           "children": "Enter Mood",
           "id": "displayButton",
-          "onClick": undefined,
+          "onClick": [Function],
         },
         "ref": null,
         "rendered": "Enter Mood",
@@ -95,7 +95,7 @@ ShallowWrapper {
 />,
           <button
             id="displayButton"
-            onClick={undefined}
+            onClick={[Function]}
 >
             Enter Mood
 </button>,
@@ -133,7 +133,7 @@ ShallowWrapper {
           "props": Object {
             "children": "Enter Mood",
             "id": "displayButton",
-            "onClick": undefined,
+            "onClick": [Function],
           },
           "ref": null,
           "rendered": "Enter Mood",

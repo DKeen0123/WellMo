@@ -41,11 +41,9 @@ describe('Form', () => {
       expect(form.state('firstScaleScore')).toEqual(99);
     });
 
-    // it('displays output when button is clicked', () => {
-    //   const fullFormRender = mount(<Form />, { attachTo: document.body });
-    //   fullFormRender.setState({ firstScaleScore: 99 });
-    //   fullFormRender.find('#displayButton').prop('onClick')();
-    //   expect(fullFormRender.find('#outputBox').text()).toEqual('99');
-    // });
+    it('displays output when button is clicked', () => {
+      form.instance().displayScore();
+      expect(form.state('savedFirstScaleScore')).toEqual(99);
+    });
   });
 });

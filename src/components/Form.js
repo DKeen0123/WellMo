@@ -13,10 +13,10 @@ class Form extends Component {
   }
 
   updateState = event => this.setState({ firstScaleScore: event.target.value });
-  // displayScore = () => {
-  //   const outputBox = document.getElementById('outputBox');
-  //   outputBox.innerHTML = this.state.firstScaleScore;
-  // };
+  displayScore = () => {
+    let { firstScaleScore } = this.state;
+    this.setState({ savedFirstScaleScore: firstScaleScore });
+  };
 
   render() {
     return (
