@@ -20,12 +20,6 @@ ShallowWrapper {
       "children": Array [
         <Header />,
         <Question />,
-        <Scale
-          handleTextBoxInput={[Function]}
-/>,
-        <Submit
-          handleDisplayClick={[Function]}
-/>,
         <Output
           score={undefined}
 />,
@@ -56,28 +50,6 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "handleTextBoxInput": [Function],
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "handleDisplayClick": [Function],
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
           "score": undefined,
         },
         "ref": null,
@@ -96,12 +68,6 @@ ShallowWrapper {
         "children": Array [
           <Header />,
           <Question />,
-          <Scale
-            handleTextBoxInput={[Function]}
-/>,
-          <Submit
-            handleDisplayClick={[Function]}
-/>,
           <Output
             score={undefined}
 />,
@@ -123,28 +89,6 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "handleTextBoxInput": [Function],
-          },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "handleDisplayClick": [Function],
-          },
           "ref": null,
           "rendered": null,
           "type": [Function],

@@ -10,26 +10,48 @@ class Form extends Component {
     super();
     this.state = {
       firstScaleScore: undefined,
-      savedFirstScaleScore: undefined
+      savedFirstScaleScore: undefined,
+      buttonClicked: false,
     };
   }
+
+  defaultView = () => {
+    return(
+        <div>
+            <Header />
+            <Question />
+            <Scale handleTextBoxInput={this.handleTextBoxInput}/>
+            <Submit handleDisplayClick={this.handleDisplayClick}/>
+        </div>
+    );
+  };
+
+  secondView = () => {
+    return(
+        <div>
+            <Header />
+            <Question />
+            <Output score={this.state.savedFirstScaleScore}/>
+        </div>
+    );
+};
+
+  decider = () => {
+      if(this.state.buttonClicked === true) {
+          return this.secondView()
+      }
+      else return this.defaultView()
+  };
+
 
   handleTextBoxInput = event => this.setState({ firstScaleScore: event.target.value });
   handleDisplayClick = () => {
     let { firstScaleScore } = this.state;
-    this.setState({ savedFirstScaleScore: firstScaleScore });
+    this.setState({ savedFirstScaleScore: firstScaleScore, buttonClicked: true });
   };
 
   render() {
-    return (
-      <div>
-        <Header />
-        <Question />
-        <Scale handleTextBoxInput={this.handleTextBoxInput}/>
-        <Submit handleDisplayClick={this.handleDisplayClick}/>
-        <Output score={this.state.savedFirstScaleScore}/>
-      </div>
-    );
+    return this.decider()
   }
 }
 

@@ -84,6 +84,7 @@ describe('button not clicked', () => {
     });
   });
 
+
   describe('when Scale input is updated', () => {
     it('should update the state to the value of the input', () => {
       const event = { target: { name: 'scaleInput', value: 99 } };
@@ -94,6 +95,12 @@ describe('button not clicked', () => {
     it('displays output when button is clicked', () => {
       form.instance().handleDisplayClick();
       expect(form.state('savedFirstScaleScore')).toEqual(99);
+      });
+    it('should change the buttonClicked state to true', () => {
+        form = shallow(<Form />);
+        form.instance().handleDisplayClick();
+        expect(form.state('buttonClicked')).toEqual(true
+      });
     });
   });
 });
