@@ -5,9 +5,10 @@
   "dependencies": {
     "enzyme-adapter-react-16": "^1.1.1",
     "react-redux": "^5.0.7",
+    "react-scripts": "1.1.1",
     "redux": "^3.7.2",
     "redux-devtools-extension": "^2.13.2",
-    "react-scripts": "1.1.1"
+    "socks": "^2.1.6"
   },
   "scripts": {
     "start": "react-scripts start",
