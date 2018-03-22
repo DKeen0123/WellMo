@@ -24,10 +24,11 @@ ShallowWrapper {
 />,
         <button
           id="displayButton"
-          onClick={[Function]}
+          onClick={undefined}
 >
           Enter Mood
 </button>,
+        <Output />,
       ],
     },
     "ref": null,
@@ -59,11 +60,20 @@ ShallowWrapper {
         "props": Object {
           "children": "Enter Mood",
           "id": "displayButton",
-          "onClick": [Function],
+          "onClick": undefined,
         },
         "ref": null,
         "rendered": "Enter Mood",
         "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
       },
     ],
     "type": "div",
@@ -81,10 +91,11 @@ ShallowWrapper {
 />,
           <button
             id="displayButton"
-            onClick={[Function]}
+            onClick={undefined}
 >
             Enter Mood
 </button>,
+          <Output />,
         ],
       },
       "ref": null,
@@ -116,11 +127,20 @@ ShallowWrapper {
           "props": Object {
             "children": "Enter Mood",
             "id": "displayButton",
-            "onClick": [Function],
+            "onClick": undefined,
           },
           "ref": null,
           "rendered": "Enter Mood",
           "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
         },
       ],
       "type": "div",

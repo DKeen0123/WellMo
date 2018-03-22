@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Scale from './Scale';
 import Header from './Header';
+import Output from './Output';
 
 class Form extends Component {
   constructor() {
@@ -9,10 +10,10 @@ class Form extends Component {
   }
 
   updateState = event => this.setState({ firstScaleScore: event.target.value });
-  displayScore = () => {
-    const outputBox = document.getElementById('outputBox');
-    outputBox.innerHTML = this.state.firstScaleScore;
-  };
+  // displayScore = () => {
+  //   const outputBox = document.getElementById('outputBox');
+  //   outputBox.innerHTML = this.state.firstScaleScore;
+  // };
 
   render() {
     return (
@@ -22,6 +23,7 @@ class Form extends Component {
         <button id="displayButton" onClick={this.displayScore}>
           Enter Mood
         </button>
+        <Output />
       </div>
     );
   }
