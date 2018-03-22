@@ -1,26 +1,33 @@
 import React, { Component } from 'react';
 import Scale from './Scale';
 import Question from './Question';
+import Header from './Header';
+import Output from './Output';
+import Submit from './Submit';
 
 class Form extends Component {
   constructor() {
     super();
-    this.state = { firstScaleScore: undefined };
+    this.state = {
+      firstScaleScore: undefined,
+      savedFirstScaleScore: undefined
+    };
   }
 
   updateState = event => this.setState({ firstScaleScore: event.target.value });
   displayScore = () => {
-    const outputBox = document.getElementById('outputBox')
-    outputBox.innerHTML = this.state.firstScaleScore;
+    let { firstScaleScore } = this.state;
+    this.setState({ savedFirstScaleScore: firstScaleScore });
   };
 
   render() {
     return (
       <div>
+        <Header />
         <Question />
         <Scale updateState={this.updateState}/>
-        <button id="displayButton" onClick={this.displayScore}>Enter Mood</button>
-        <p id="outputBox"/>
+        <Submit displayScore={this.displayScore}/>
+        <Output score={this.state.savedFirstScaleScore} />
       </div>
     );
   }

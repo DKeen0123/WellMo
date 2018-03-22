@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
-import Submit from '../../components/SubmitButton';
+import Submit from '../../components/Submit';
 
 describe('Submit', () => {
   let submit = shallow(<Submit />);

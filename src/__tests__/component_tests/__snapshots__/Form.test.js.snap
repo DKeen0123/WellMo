@@ -18,7 +18,11 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
+<<<<<<< HEAD
         <Question />,
+=======
+        <Header />,
+>>>>>>> scale_tdd
         <Scale
           updateState={[Function]}
 />,
@@ -28,8 +32,8 @@ ShallowWrapper {
 >
           Enter Mood
 </button>,
-        <p
-          id="outputBox"
+        <Output
+          score={undefined}
 />,
       ],
     },
@@ -71,13 +75,13 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "host",
+        "nodeType": "function",
         "props": Object {
-          "id": "outputBox",
+          "score": undefined,
         },
         "ref": null,
         "rendered": null,
-        "type": "p",
+        "type": [Function],
       },
     ],
     "type": "div",
@@ -89,7 +93,11 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
+<<<<<<< HEAD
           <Question />,
+=======
+          <Header />,
+>>>>>>> scale_tdd
           <Scale
             updateState={[Function]}
 />,
@@ -99,8 +107,8 @@ ShallowWrapper {
 >
             Enter Mood
 </button>,
-          <p
-            id="outputBox"
+          <Output
+            score={undefined}
 />,
         ],
       },
@@ -142,13 +150,13 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "host",
+          "nodeType": "function",
           "props": Object {
-            "id": "outputBox",
+            "score": undefined,
           },
           "ref": null,
           "rendered": null,
-          "type": "p",
+          "type": [Function],
         },
       ],
       "type": "div",
