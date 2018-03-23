@@ -4,8 +4,10 @@ const Button = styled.button`
   background: transparent;
   margin-top: 10px;
   font-family: 'Nunito', sans-serif;
-  padding: 3px;
-  border-radius: 8px;
+  font-size: 18px;
+  padding: 12px;
+  border: 3px solid;
+  border-radius: 32px;
   color: white;
 `;
 
