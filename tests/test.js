@@ -1,5 +1,5 @@
 module.exports = {
-    'Checking that the test works': function(client) {
+    'Checks the functionality of the submit button': function(client) {
 
   client
     .url('http://localhost:3000')
