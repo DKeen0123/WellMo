@@ -3,10 +3,10 @@ module.exports = {
 
   client
     .url('http://localhost:3000')
-    .setValue('input', 'I cannot convert my feelings to numbers')
+    .setValue('input', '50')
     .click('button', function(result) {
       this.assert.strictEqual(result.status, 0);
     })
-    .expect.element('#score').text.to.contain('I cannot convert my feelings to numbers');
+    .expect.element('#score').text.to.contain('50');
   },
 };

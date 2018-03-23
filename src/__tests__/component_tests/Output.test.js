@@ -11,6 +11,6 @@ describe('Output', () => {
   });
 
   it('displays score when passed it as props', () => {
-    expect(output.find('#score').text()).toEqual('99');
+    expect(output.find('#score').text()).toEqual('Your score: 99');
   });
 });

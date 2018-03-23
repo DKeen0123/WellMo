@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="1">
+
+  <testsuite name="buttonTest"
+    errors="1" failures="0" hostname="" id="" package="buttonTest" skipped="0"
+    tests="1" time="0.005000" timestamp="Fri, 23 Mar 2018 14:08:58 GMT">
+  
+    <testcase name="Checks the functionality of the submit button" classname="buttonTest" time="0.005000" assertions="0">
+    </testcase>
+  
+
+  
+    <system-err>
+        Error while running [Button Test / Checks the functionality of the submit button]:
+
+  TypeError: client.url(...).setValue(...).click(...).expect.element(...).isInteger is not a function
+    at Object.Checks the functionality of the submit button (/Users/JoshuaHolloway/Dev/WellMo/tests/buttonTest.js:10:31)
+    at Module.call (/Users/JoshuaHolloway/Dev/WellMo/node_modules/nightwatch/lib/runner/module.js:62:34)
+    at /Users/JoshuaHolloway/Dev/WellMo/node_modules/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/JoshuaHolloway/Dev/WellMo/node_modules/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/JoshuaHolloway/Dev/WellMo/node_modules/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/JoshuaHolloway/Dev/WellMo/node_modules/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/JoshuaHolloway/Dev/WellMo/node_modules/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/JoshuaHolloway/Dev/WellMo/node_modules/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/JoshuaHolloway/Dev/WellMo/node_modules/nightwatch/node_modules/q/q.js:125:13)
+    at process._tickCallback (internal/process/next_tick.js:150:11)
+    </system-err>
+  
+
+  
+  </testsuite>
+</testsuites>
