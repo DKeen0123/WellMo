@@ -10,7 +10,7 @@ const Scale = props => {
         max="100"
         name="scaleInput"
         onChange={props.handleTextBoxInput}
-      />
+        />
     </div>
   );
 };
