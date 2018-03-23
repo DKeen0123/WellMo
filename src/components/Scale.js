@@ -1,9 +1,9 @@
 import React from 'react';
-
+import StyledScale from './styledComponents/Scale';
 const Scale = props => {
   return (
     <div>
-      <input
+      <StyledScale
         id="firstScale"
         type="number"
         min="0"
