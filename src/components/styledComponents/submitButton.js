@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 const Button = styled.button`
   background: transparent;
-  margin-top: 60px;
   font-family: 'Nunito', sans-serif;
   font-size: 18px;
   padding: 12px;

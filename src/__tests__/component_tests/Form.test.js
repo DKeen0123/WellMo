@@ -10,6 +10,10 @@ describe('Form', () => {
       expect(form).toMatchSnapshot();
     });
 
+    it('initializes firstScaleScore state at 50', () => {
+      expect(form.state('firstScaleScore')).toEqual(50);
+    });
+
     describe('button not clicked', () => {
       beforeEach(() => {
         form = shallow(<Form />);

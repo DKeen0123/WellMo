@@ -6,7 +6,6 @@ const Scale = props => {
       <StyledScale
         id="firstScale"
         type="range"
-        // value="50"
         min="0"
         max="100"
         name="scaleInput"

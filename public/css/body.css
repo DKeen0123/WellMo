@@ -29,10 +29,15 @@ input[type='number']::-webkit-inner-spin-button {
 
 #firstScale::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
-   appearance: none;
-   width: 25px; /* Set a specific slider handle width */
-   height: 25px; /* Slider handle height */
-   background: white; /* Green background */
-   cursor: pointer; /* Cursor on hover */
-   border-radius: 12px;
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: white; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 12px;
+}
+
+#scaleValue {
+  font-size: 20px;
+  margin-bottom: -3px;
 }
