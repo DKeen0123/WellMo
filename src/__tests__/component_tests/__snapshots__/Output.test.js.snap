@@ -19,10 +19,12 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <styled.h1
-        id="score"
->
-        99
+      "children": <styled.h1>
+        <p
+                id="score"
+        >
+                99
+        </p>
 </styled.h1>,
     },
     "ref": null,
@@ -31,11 +33,25 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": "99",
-        "id": "score",
+        "children": <p
+          id="score"
+>
+          99
+</p>,
       },
       "ref": null,
-      "rendered": "99",
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "99",
+          "id": "score",
+        },
+        "ref": null,
+        "rendered": "99",
+        "type": "p",
+      },
       "type": [Function],
     },
     "type": "div",
@@ -46,10 +62,12 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <styled.h1
-          id="score"
->
-          99
+        "children": <styled.h1>
+          <p
+                    id="score"
+          >
+                    99
+          </p>
 </styled.h1>,
       },
       "ref": null,
@@ -58,11 +76,25 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": "99",
-          "id": "score",
+          "children": <p
+            id="score"
+>
+            99
+</p>,
         },
         "ref": null,
-        "rendered": "99",
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "99",
+            "id": "score",
+          },
+          "ref": null,
+          "rendered": "99",
+          "type": "p",
+        },
         "type": [Function],
       },
       "type": "div",

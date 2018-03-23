@@ -4,7 +4,9 @@ import StyledOutput from './styledComponents/Output';
 const Output = props => {
   return (
     <div>
-      <StyledOutput id="score">{props.score}</StyledOutput>
+      <StyledOutput>
+        <p id="score">{props.score}</p>
+      </StyledOutput>
     </div>
   );
 };
