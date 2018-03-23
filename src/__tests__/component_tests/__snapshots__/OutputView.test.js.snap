@@ -19,6 +19,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Question />,
+        undefined,
         <Output
           score={undefined}
 />,
@@ -35,6 +36,7 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      undefined,
       Object {
         "instance": null,
         "key": undefined,
@@ -57,6 +59,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Question />,
+          undefined,
           <Output
             score={undefined}
 />,
@@ -73,6 +76,7 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
+        undefined,
         Object {
           "instance": null,
           "key": undefined,

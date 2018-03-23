@@ -6,7 +6,8 @@ const OutputView = props => {
   return(
       <div>
         <Question />
-        <Output score={props.savedFirstScaleScore}/>
+        {console.log(props.score)}
+        <Output score={props.score}/>
       </div>
   );
 };

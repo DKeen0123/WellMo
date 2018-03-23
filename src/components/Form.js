@@ -3,11 +3,6 @@ import Header from './Header';
 import ScaleQuestionView from './ScaleQuestionView';
 import OutputView from './OutputView';
 
-const VIEWS = {
-  scaleQuestion: <ScaleQuestionView handleTextBoxInput={this.handleTextBoxInput} handleDisplayClick={this.handleDisplayClick}/>,
-  output: <OutputView score={this.state.savedFirstScaleScore}/>
-}
-
 class Form extends Component {
   constructor() {
     super();
@@ -18,7 +13,7 @@ class Form extends Component {
     };
   }
 
-  decider = () => {
+  decider() {
       if(this.state.buttonClicked === true) {
           return 'output'
       }
@@ -33,10 +28,15 @@ class Form extends Component {
   };
 
   render() {
+    const VIEWS = {
+      scaleQuestion: <ScaleQuestionView handleTextBoxInput={this.handleTextBoxInput} handleDisplayClick={this.handleDisplayClick}/>,
+      output: <OutputView score={this.state.savedFirstScaleScore}/>
+    }
     return (
       <div>
         <Header />
-          {VIEWS[decider()]}
+          {console.log(this.VIEWS)}
+          {VIEWS[this.decider()]}
       </div>
     );
   }
