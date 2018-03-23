@@ -24,7 +24,9 @@ class Output extends Component {
     const badFeelings = [
       'why not take some time to do something that you know helps you get back to your best',
       'accept how you feel. You feel how you feel and that is OK',
-      'think back to a happier time'
+      'think back to a happier time',
+      'why not call or meet up with someone that knows brings you up?',
+      'why not see if exercise can perk you up'
     ];
 
     const goodFeelings = [
@@ -35,9 +37,11 @@ class Output extends Component {
     return (
       <div>
         <StyledOutput>
-          <p id="score">{this.props.score}</p>
+          <p id="score">Your score: {this.props.score}</p>
         </StyledOutput>
-        <p>{this.badGoodDecider(badFeelings, goodFeelings)}</p>
+        <p id="output-message">
+          {this.badGoodDecider(badFeelings, goodFeelings)}
+        </p>
       </div>
     );
   }
