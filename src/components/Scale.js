@@ -5,7 +5,9 @@ const Scale = props => {
     <div>
       <input
         id="firstScale"
-        type="integer"
+        type="number"
+        min="0"
+        max="100"
         name="scaleInput"
         onChange={props.handleTextBoxInput}
       />
