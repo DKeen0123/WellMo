@@ -3,7 +3,8 @@ import { shallow, mount } from 'enzyme';
 import ScaleQuestionView from '../../components/ScaleQuestionView';
 
 describe('ScaleQuestionView', () => {
-  let scaleView = shallow(<ScaleQuestionView />);
+  const props = { score: 33 };
+  let scaleView = shallow(<ScaleQuestionView {...props} />);
 
   describe('Rendering components', () => {
     it('renders correctly', () => {
@@ -22,7 +23,10 @@ describe('ScaleQuestionView', () => {
       it('renders an Submit component', () => {
         expect(scaleView.find('Submit').exists()).toBe(true);
       });
-      
+
+      it('renders the score props onto the screen', () => {
+        expect(scaleView.find('#score').text()).toEqual('33');
+      });
     });
   });
 });

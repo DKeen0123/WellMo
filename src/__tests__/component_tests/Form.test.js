@@ -45,6 +45,12 @@ describe('Form', () => {
           ).toBe(form.instance().handleTextBoxInput);
         });
 
+        it('passes firstScaleScore as props to ScaleQuestionView Component', () => {
+          expect(form.find('ScaleQuestionView').prop('score')).toEqual(
+            form.state('firstScaleScore')
+          );
+        });
+
         it('passes handleDisplayClick as props to ScaleQuestionView Component', () => {
           expect(
             form.find('ScaleQuestionView').prop('handleDisplayClick')

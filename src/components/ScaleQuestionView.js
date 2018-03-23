@@ -8,7 +8,7 @@ const ScaleQuestionView = props => {
     <div>
       <Question />
       <Scale handleTextBoxInput={props.handleTextBoxInput} />
-      <p>{props.score}</p>
+      <p id="score">{props.score}</p>
       <Submit handleDisplayClick={props.handleDisplayClick} />
     </div>
   );

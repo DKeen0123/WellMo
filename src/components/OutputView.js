@@ -3,12 +3,11 @@ import Question from './Question';
 import Output from './Output';
 
 const OutputView = props => {
-  return(
-      <div>
-        <Question />
-        {console.log(props.score)}
-        <Output score={props.score}/>
-      </div>
+  return (
+    <div>
+      <Question />
+      <Output score={props.score} />
+    </div>
   );
 };
 
