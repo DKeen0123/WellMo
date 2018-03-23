@@ -10,7 +10,7 @@ describe('Output', () => {
     expect(output).toMatchSnapshot();
   });
 
-  it('displays acore when passed it as props', () => {
+  it('displays score when passed it as props', () => {
     expect(output.find('#score').text()).toEqual('99');
   });
 });

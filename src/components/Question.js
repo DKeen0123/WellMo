@@ -1,9 +1,8 @@
 import React from 'react';
+import StyledHeaderTwo from './styledComponents/HeaderTwo';
 
 const Question = () => {
-    return (
-        <h2>How are you feeling out of 100?</h2>
-    );
+  return <StyledHeaderTwo>How are you feeling out of 100?</StyledHeaderTwo>;
 };
 
 export default Question;

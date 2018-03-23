@@ -1,10 +1,11 @@
 import React from 'react';
+import Button from './styledComponents/SubmitButton';
 
 const Submit = props => {
   return (
-    <button id="displayButton" onClick={props.handleDisplayClick}>
+    <Button id="displayButton" onClick={props.handleDisplayClick}>
       Enter Mood
-    </button>
+    </Button>
   );
 };
 

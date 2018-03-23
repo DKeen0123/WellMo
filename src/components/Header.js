@@ -1,9 +1,10 @@
 import React from 'react';
+import StyledHeader from './styledComponents/Header';
 
 const Header = () => {
   return (
     <div>
-      <h1>WellMo</h1>
+      <StyledHeader>WellMo</StyledHeader>
     </div>
   );
 };

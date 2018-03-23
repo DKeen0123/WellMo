@@ -19,32 +19,19 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <p
-        id="score"
->
-        99
-</p>,
+      "children": <styled.h1>
+        <p
+                id="score"
+        >
+                99
+        </p>
+</styled.h1>,
     },
     "ref": null,
     "rendered": Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": "99",
-        "id": "score",
-      },
-      "ref": null,
-      "rendered": "99",
-      "type": "p",
-    },
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
+      "nodeType": "class",
       "props": Object {
         "children": <p
           id="score"
@@ -64,6 +51,51 @@ ShallowWrapper {
         "ref": null,
         "rendered": "99",
         "type": "p",
+      },
+      "type": [Function],
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <styled.h1>
+          <p
+                    id="score"
+          >
+                    99
+          </p>
+</styled.h1>,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <p
+            id="score"
+>
+            99
+</p>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "99",
+            "id": "score",
+          },
+          "ref": null,
+          "rendered": "99",
+          "type": "p",
+        },
+        "type": [Function],
       },
       "type": "div",
     },

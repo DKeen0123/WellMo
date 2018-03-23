@@ -1,0 +1,43 @@
+html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  color: #f2e8e8;
+  height: 100%;
+  background: linear-gradient(#1d2b64, #f8cdda);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#root {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#firstScale::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: white; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 12px;
+}
+
+#scaleValue {
+  font-size: 20px;
+  margin-bottom: -3px;
+}

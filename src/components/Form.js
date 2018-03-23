@@ -9,49 +9,53 @@ class Form extends Component {
   constructor() {
     super();
     this.state = {
-      firstScaleScore: undefined,
+      firstScaleScore: 50,
       savedFirstScaleScore: undefined,
-      buttonClicked: false,
+      buttonClicked: false
     };
   }
 
   defaultView = () => {
-    return(
-        <div>
-            <Header />
-            <Question />
-            <Scale handleTextBoxInput={this.handleTextBoxInput}/>
-            <Submit handleDisplayClick={this.handleDisplayClick}/>
-        </div>
+    return (
+      <div>
+        <Header />
+        <Question />
+        <Scale handleTextBoxInput={this.handleTextBoxInput} />
+        <p id="scaleValue">{this.state.firstScaleScore}</p>
+        <br />
+        <Submit handleDisplayClick={this.handleDisplayClick} />
+      </div>
     );
   };
 
   secondView = () => {
-    return(
-        <div>
-            <Header />
-            <Question />
-            <Output score={this.state.savedFirstScaleScore}/>
-        </div>
+    return (
+      <div>
+        <Header />
+        <Question />
+        <Output score={this.state.savedFirstScaleScore} />
+      </div>
     );
-};
-
-  decider = () => {
-      if(this.state.buttonClicked === true) {
-          return this.secondView()
-      }
-      else return this.defaultView()
   };
 
+  decider = () => {
+    if (this.state.buttonClicked === true) {
+      return this.secondView();
+    } else return this.defaultView();
+  };
 
-  handleTextBoxInput = event => this.setState({ firstScaleScore: event.target.value });
+  handleTextBoxInput = event =>
+    this.setState({ firstScaleScore: event.target.value });
   handleDisplayClick = () => {
     let { firstScaleScore } = this.state;
-    this.setState({ savedFirstScaleScore: firstScaleScore, buttonClicked: true });
+    this.setState({
+      savedFirstScaleScore: firstScaleScore,
+      buttonClicked: true
+    });
   };
 
   render() {
-    return this.decider()
+    return this.decider();
   }
 }
 
