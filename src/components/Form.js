@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
-import Scale from './Scale';
-import Question from './Question';
 import Header from './Header';
-import Output from './Output';
-import Submit from './Submit';
+import ScaleQuestionView from './ScaleQuestionView';
+import OutputView from './OutputView';
+
+const VIEWS = {
+  scaleQuestion: <ScaleQuestionView handleTextBoxInput={this.handleTextBoxInput} handleDisplayClick={this.handleDisplayClick}/>,
+  output: <OutputView score={this.state.savedFirstScaleScore}/>
+}
 
 class Form extends Component {
   constructor() {
@@ -15,32 +18,11 @@ class Form extends Component {
     };
   }
 
-  defaultView = () => {
-    return(
-        <div>
-            <Header />
-            <Question />
-            <Scale handleTextBoxInput={this.handleTextBoxInput}/>
-            <Submit handleDisplayClick={this.handleDisplayClick}/>
-        </div>
-    );
-  };
-
-  secondView = () => {
-    return(
-        <div>
-            <Header />
-            <Question />
-            <Output score={this.state.savedFirstScaleScore}/>
-        </div>
-    );
-};
-
   decider = () => {
       if(this.state.buttonClicked === true) {
-          return this.secondView()
+          return 'output'
       }
-      else return this.defaultView()
+      else return 'scaleQuestion'
   };
 
 
@@ -51,7 +33,12 @@ class Form extends Component {
   };
 
   render() {
-    return this.decider()
+    return (
+      <div>
+        <Header />
+          {VIEWS[decider()]}
+      </div>
+    );
   }
 }
 

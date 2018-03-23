@@ -12,7 +12,7 @@ describe('ScaleQuestionView', () => {
 
     describe('renders all components', () => {
       it('renders a scale component', () => {
-        expect(scaleView.find('Scale').exists()).toBe(false);
+        expect(scaleView.find('Scale').exists()).toBe(true);
       });
 
       it('renders a Question component', () => {
@@ -20,12 +20,9 @@ describe('ScaleQuestionView', () => {
       });
 
       it('renders an Submit component', () => {
-        expect(scaleView.find('Submit').exists()).toBe(false);
+        expect(scaleView.find('Submit').exists()).toBe(true);
       });
-
-      it('renders a Question component', () => {
-        expect(scaleView.find('Question').exists()).toBe(true);
-      });
+      
     });
   });
 });
