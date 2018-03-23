@@ -1,4 +1,12 @@
-body{
-    background: linear-gradient(#1d2b64, #f8cdda);
-    height: 700px
+html {
+  height: 100%;
+}
+
+body {
+  text-align: center;
+  color: #f2e8e8;
+  height: 100%;
+  background: linear-gradient(#1d2b64, #f8cdda);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
