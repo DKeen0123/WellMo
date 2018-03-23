@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="buttonTest"
+    errors="0" failures="0" hostname="" id="" package="buttonTest" skipped="0"
+    tests="1" time="8.922" timestamp="Fri, 23 Mar 2018 10:20:44 GMT">
+  
+    <testcase name="Checks the functionality of the submit button" classname="buttonTest" time="8.922" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>
