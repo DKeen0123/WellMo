@@ -16,7 +16,7 @@
         Error while running [Test / Checking that the test works]:
 
   TypeError: browser.url(...).expect.element(...).to.be.visible.end is not a function
-    at Object.Checking that the test works (/Users/JoshuaHolloway/Dev/WellMo/tests/test.js:6:14)
+    at Object.Checking that the test works (/Users/JoshuaHolloway/Dev/WellMo/tests/buttonTest.js:6:14)
     at Module.call (/Users/JoshuaHolloway/Dev/WellMo/node_modules/nightwatch/lib/runner/module.js:62:34)
     at /Users/JoshuaHolloway/Dev/WellMo/node_modules/nightwatch/lib/runner/testcase.js:70:29
     at _fulfilled (/Users/JoshuaHolloway/Dev/WellMo/node_modules/nightwatch/node_modules/q/q.js:834:54)
