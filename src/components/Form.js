@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import Scale from './Scale';
-import Question from './Question';
 import Header from './Header';
-import Output from './Output';
-import Submit from './Submit';
+import ScaleQuestionView from './ScaleQuestionView';
+import OutputView from './OutputView';
 
 class Form extends Component {
   constructor() {
@@ -15,34 +13,11 @@ class Form extends Component {
     };
   }
 
-  defaultView = () => {
-    return (
-      <div>
-        <Header />
-        <Question />
-        <Scale handleTextBoxInput={this.handleTextBoxInput} />
-        <p id="scaleValue">{this.state.firstScaleScore}</p>
-        <br />
-        <Submit handleDisplayClick={this.handleDisplayClick} />
-      </div>
-    );
-  };
-
-  secondView = () => {
-    return (
-      <div>
-        <Header />
-        <Question />
-        <Output score={this.state.savedFirstScaleScore} />
-      </div>
-    );
-  };
-
-  decider = () => {
+  decider() {
     if (this.state.buttonClicked === true) {
-      return this.secondView();
-    } else return this.defaultView();
-  };
+      return 'output';
+    } else return 'scaleQuestion';
+  }
 
   handleTextBoxInput = event =>
     this.setState({ firstScaleScore: event.target.value });
@@ -55,7 +30,22 @@ class Form extends Component {
   };
 
   render() {
-    return this.decider();
+    const VIEWS = {
+      scaleQuestion: (
+        <ScaleQuestionView
+          score={this.state.firstScaleScore}
+          handleTextBoxInput={this.handleTextBoxInput}
+          handleDisplayClick={this.handleDisplayClick}
+        />
+      ),
+      output: <OutputView score={this.state.savedFirstScaleScore} />
+    };
+    return (
+      <div>
+        <Header />
+        {VIEWS[this.decider()]}
+      </div>
+    );
   }
 }
 

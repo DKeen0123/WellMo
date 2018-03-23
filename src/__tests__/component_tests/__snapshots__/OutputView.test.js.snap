@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Form Rendering components renders correctly 1`] = `
+exports[`OutputView Rendering components renders correctly 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Form />,
+  Symbol(enzyme.__unrendered__): <OutputView />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -18,11 +18,10 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Header />,
-        <ScaleQuestionView
-          handleDisplayClick={[Function]}
-          handleTextBoxInput={[Function]}
-          score={50}
+        <Question />,
+        undefined,
+        <Output
+          score={undefined}
 />,
       ],
     },
@@ -37,14 +36,13 @@ ShallowWrapper {
         "rendered": null,
         "type": [Function],
       },
+      undefined,
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "handleDisplayClick": [Function],
-          "handleTextBoxInput": [Function],
-          "score": 50,
+          "score": undefined,
         },
         "ref": null,
         "rendered": null,
@@ -60,11 +58,10 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Header />,
-          <ScaleQuestionView
-            handleDisplayClick={[Function]}
-            handleTextBoxInput={[Function]}
-            score={50}
+          <Question />,
+          undefined,
+          <Output
+            score={undefined}
 />,
         ],
       },
@@ -79,14 +76,13 @@ ShallowWrapper {
           "rendered": null,
           "type": [Function],
         },
+        undefined,
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "handleDisplayClick": [Function],
-            "handleTextBoxInput": [Function],
-            "score": 50,
+            "score": undefined,
           },
           "ref": null,
           "rendered": null,

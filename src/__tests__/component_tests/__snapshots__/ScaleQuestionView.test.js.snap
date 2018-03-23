@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Form Rendering components renders correctly 1`] = `
+exports[`ScaleQuestionView Rendering components renders correctly 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Form />,
+  Symbol(enzyme.__unrendered__): <ScaleQuestionView />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -18,11 +18,13 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Header />,
-        <ScaleQuestionView
-          handleDisplayClick={[Function]}
-          handleTextBoxInput={[Function]}
-          score={50}
+        <Question />,
+        <Scale
+          handleTextBoxInput={undefined}
+/>,
+        <p />,
+        <Submit
+          handleDisplayClick={undefined}
 />,
       ],
     },
@@ -42,9 +44,29 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
-          "handleDisplayClick": [Function],
-          "handleTextBoxInput": [Function],
-          "score": 50,
+          "handleTextBoxInput": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "handleDisplayClick": undefined,
         },
         "ref": null,
         "rendered": null,
@@ -60,11 +82,13 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Header />,
-          <ScaleQuestionView
-            handleDisplayClick={[Function]}
-            handleTextBoxInput={[Function]}
-            score={50}
+          <Question />,
+          <Scale
+            handleTextBoxInput={undefined}
+/>,
+          <p />,
+          <Submit
+            handleDisplayClick={undefined}
 />,
         ],
       },
@@ -84,9 +108,29 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "handleDisplayClick": [Function],
-            "handleTextBoxInput": [Function],
-            "score": 50,
+            "handleTextBoxInput": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "handleDisplayClick": undefined,
           },
           "ref": null,
           "rendered": null,
