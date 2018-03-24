@@ -3,8 +3,7 @@ import StyledOutput from './styledComponents/Output';
 
 class Output extends Component {
   randomnessGenerator = strings => {
-    let string = strings[Math.floor(Math.random() * strings.length)];
-    return string;
+    return strings[Math.floor(Math.random() * strings.length)];
   };
 
   badGoodDecider = (badFeelings, goodFeelings) => {
@@ -23,15 +22,15 @@ class Output extends Component {
   render() {
     const badFeelings = [
       'why not take some time to do something that you know helps you get back to your best',
-      'accept how you feel. You feel how you feel and that is OK',
-      'think back to a happier time',
-      'why not call or meet up with someone that knows brings you up?',
+      'accept how you feel. It\'s okay to feel this way',
+      'reflect on happy memories',
+      'why not call or meet up with someone who will cheer you up?',
       'why not see if exercise can perk you up'
     ];
 
     const goodFeelings = [
-      'reflect on the things you have been doing well for yourself, so you can use them to bring you up in future',
-      'try and make the most of your positive mood. Why not do some exercise?',
+      'reflect on the things you have been doing well for yourself. You can use them to bring you up in future',
+      'try and make the most of your positive mood. Enjoy it!',
       'time to recognise how good you feel and relish it'
     ];
     return (

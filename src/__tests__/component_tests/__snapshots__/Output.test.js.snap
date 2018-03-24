@@ -31,7 +31,7 @@ ShallowWrapper {
         <p
           id="output-message"
 >
-          You are feeling pretty good right now, time to recognise how good you feel and relish it
+          You are feeling pretty good right now, reflect on the things you have been doing well for yourself. You can use them to bring you up in future
 </p>,
       ],
     },
@@ -75,11 +75,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "You are feeling pretty good right now, time to recognise how good you feel and relish it",
+          "children": "You are feeling pretty good right now, reflect on the things you have been doing well for yourself. You can use them to bring you up in future",
           "id": "output-message",
         },
         "ref": null,
-        "rendered": "You are feeling pretty good right now, time to recognise how good you feel and relish it",
+        "rendered": "You are feeling pretty good right now, reflect on the things you have been doing well for yourself. You can use them to bring you up in future",
         "type": "p",
       },
     ],
@@ -103,7 +103,7 @@ ShallowWrapper {
           <p
             id="output-message"
 >
-            You are feeling pretty good right now, time to recognise how good you feel and relish it
+            You are feeling pretty good right now, reflect on the things you have been doing well for yourself. You can use them to bring you up in future
 </p>,
         ],
       },
@@ -147,11 +147,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "You are feeling pretty good right now, time to recognise how good you feel and relish it",
+            "children": "You are feeling pretty good right now, reflect on the things you have been doing well for yourself. You can use them to bring you up in future",
             "id": "output-message",
           },
           "ref": null,
-          "rendered": "You are feeling pretty good right now, time to recognise how good you feel and relish it",
+          "rendered": "You are feeling pretty good right now, reflect on the things you have been doing well for yourself. You can use them to bring you up in future",
           "type": "p",
         },
       ],
