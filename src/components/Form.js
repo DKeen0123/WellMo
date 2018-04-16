@@ -19,8 +19,9 @@ class Form extends Component {
     } else return 'scaleQuestion';
   }
 
-  handleTextBoxInput = event =>
+  handleTextBoxInput = event => // i.e. scaleInput
     this.setState({ firstScaleScore: event.target.value });
+
   handleDisplayClick = () => {
     let { firstScaleScore } = this.state;
     this.setState({
@@ -39,6 +40,7 @@ class Form extends Component {
         />
       ),
       output: <OutputView score={this.state.savedFirstScaleScore} />
+
     };
     return (
       <div>
