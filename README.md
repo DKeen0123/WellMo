@@ -2,7 +2,7 @@
 
 <img align="right" src="https://s18.postimg.cc/e1g4hcka1/Screen_Shot_2018-04-16_at_13.03.36.png" width="450"/>
 
-WellMo is a single page web application that checks in with your mood and returns a helpful response.
+WellMo is a single page web application which was built in 5 days that checks in with your mood and returns a helpful response.
 
 <img align="right" src="https://s18.postimg.cc/skn9iqq9l/Screen_Shot_2018-04-16_at_13.03.47.png" width="450"/>
 
